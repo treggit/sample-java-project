@@ -20,7 +20,8 @@ jobs:
     - working-directory: ivy
       run: |
         git clone https://git-wip-us.apache.org/repos/asf/ant-ivy.git
-        ls
+    - working-directory: ivy/ant-ivy
+      run: |
         ant jar
         sudo mv build/artifact/ant.jar ~/.ant/lib
     - run: sudo apt-get install ivy
