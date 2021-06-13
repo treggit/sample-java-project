@@ -23,6 +23,7 @@ jobs:
     - working-directory: ivy/ant-ivy
       run: |
         ant jar
+        ls build/artifact
         sudo mv build/artifact/ivy.jar ~/.ant/lib
     - run: sudo apt-get install ivy
     - name: Set up JDK 11
