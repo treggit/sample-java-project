@@ -24,7 +24,7 @@ jobs:
       run: |
         ant jar
         ls build/artifact
-        sudo mv build/artifact/ivy.jar ~/.ant/lib
+        sudo mv build/artifact/org.apache.ivy_2.6.0.alpha_20210613224137.jar ~/.ant/lib/ivy.jar
     - run: sudo apt-get install ivy
     - name: Set up JDK 11
       uses: actions/setup-java@v2
