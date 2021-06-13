@@ -20,6 +20,9 @@ jobs:
       run: |
         git clone https://git-wip-us.apache.org/repos/asf/ant-ivy.git
         ant jar 
+        ls 
+        ls build
+        ls build/artifact
         sudo mv build/artifact/ant.jar ~/.ant/lib
     - run: sudo apt-get install ivy
     - name: Set up JDK 11
